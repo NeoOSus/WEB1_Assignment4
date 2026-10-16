@@ -1,0 +1,7 @@
+body { color: #222; background: #fff; }
+main { max-width: 800px !important; }
+.nav-link.active { font-weight: bold; text-decoration: underline; }
+.plain-form { max-width: 500px; }
+.plain-field { margin-bottom: 16px; }
+.plain-field label { display: block; margin-bottom: 4px; }
+.plain-field input, .plain-field textarea { width: 100%; padding: 5px; border: 1px solid #888; border-radius: 2px; }

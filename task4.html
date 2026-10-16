@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 4 - Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light border-bottom" aria-label="Tasks">
+  <div class="container"><a class="navbar-brand" href="index.html">Assignment 4</a><div class="nav"><a class="nav-link" href="index.html">Task 0</a>
+<a class="nav-link" href="task1.html">Task 1</a>
+<a class="nav-link" href="task2.html">Task 2</a>
+<a class="nav-link" href="task3.html">Task 3</a>
+<a class="nav-link active" href="task4.html" aria-current="page">Task 4</a></div></div>
+</nav>
+<main class="container my-4">
+  <h1 class="h3">Task 4. Registration Form</h1>
+  <p>All fields except hobbies are required.</p>
+  <form class="row g-3" data-feedback novalidate>
+<div class="col-md-6">
+<label for="firstName" class="form-label">First Name</label>
+<input type="text" id="firstName" name="firstName" class="form-control" aria-describedby="firstName-error firstName-ok" required maxlength="50" autocomplete="given-name">
+<div id="firstName-error" class="invalid-feedback">Please check this field.</div>
+<div id="firstName-ok" class="valid-feedback">Looks good!</div>
+</div>
+<div class="col-md-6">
+<label for="lastName" class="form-label">Last Name</label>
+<input type="text" id="lastName" name="lastName" class="form-control" aria-describedby="lastName-error lastName-ok" required maxlength="50" autocomplete="family-name">
+<div id="lastName-error" class="invalid-feedback">Please check this field.</div>
+<div id="lastName-ok" class="valid-feedback">Looks good!</div>
+</div>
+<div class="col-12">
+<label for="email" class="form-label">Email</label>
+<input type="email" id="email" name="email" class="form-control" aria-describedby="email-error email-ok" required maxlength="100" autocomplete="email" placeholder="name@example.com">
+<div id="email-error" class="invalid-feedback">Please check this field.</div>
+<div id="email-ok" class="valid-feedback">Looks good!</div>
+</div>
+<div class="col-md-6">
+<label for="password" class="form-label">Password</label>
+<input type="password" id="password" name="password" class="form-control" aria-describedby="password-help password-error password-ok" required minlength="8" autocomplete="new-password">
+<div id="password-help" class="form-text">At least 8 characters.</div>
+<div id="password-error" class="invalid-feedback">Please check this field.</div>
+<div id="password-ok" class="valid-feedback">Looks good!</div>
+</div>
+<div class="col-md-6">
+<label for="confirmPassword" class="form-label">Confirm Password</label>
+<input type="password" id="confirmPassword" name="confirmPassword" class="form-control" aria-describedby="confirmPassword-error confirmPassword-ok" required minlength="8" autocomplete="new-password">
+<div id="confirmPassword-error" class="invalid-feedback">Please check this field.</div>
+<div id="confirmPassword-ok" class="valid-feedback">Looks good!</div>
+</div>
+<fieldset class="col-md-6"><legend class="fs-6">Gender</legend>
+<div class="form-check"><input class="form-check-input" type="radio" name="gender" id="male" value="male" required aria-describedby="gender-error"><label class="form-check-label" for="male">Male</label></div>
+<div class="form-check"><input class="form-check-input" type="radio" name="gender" id="female" value="female" required aria-describedby="gender-error"><label class="form-check-label" for="female">Female</label></div>
+<div class="form-check"><input class="form-check-input" type="radio" name="gender" id="other" value="other" required aria-describedby="gender-error"><label class="form-check-label" for="other">Other</label></div>
+<div id="gender-error" class="invalid-feedback">Please choose a gender.</div><div id="gender-ok" class="valid-feedback">Looks good!</div></fieldset>
+<fieldset class="col-md-6"><legend class="fs-6">Hobbies (optional)</legend>
+<div class="form-check"><input class="form-check-input" type="checkbox" name="hobbies" id="reading" value="Reading"><label class="form-check-label" for="reading">Reading</label></div>
+<div class="form-check"><input class="form-check-input" type="checkbox" name="hobbies" id="sports" value="Sports"><label class="form-check-label" for="sports">Sports</label></div>
+<div class="form-check"><input class="form-check-input" type="checkbox" name="hobbies" id="music" value="Music"><label class="form-check-label" for="music">Music</label></div>
+</fieldset>
+<div class="col-12"><label for="country" class="form-label">Country</label><select id="country" name="country" class="form-select" required aria-describedby="country-error country-ok"><option value="">Choose a country</option><option>Kazakhstan</option><option>Uzbekistan</option><option>Kyrgyzstan</option><option>United States</option><option>Other</option></select><div id="country-error" class="invalid-feedback">Please choose a country.</div><div id="country-ok" class="valid-feedback">Looks good!</div></div>
+<div class="col-12"><button type="submit" class="btn btn-primary">Submit</button> <button type="reset" class="btn btn-secondary">Reset</button></div>
+</form>
+<p id="result" class="mt-3" role="status" aria-live="polite"></p>
+</main>
+</body>
+</html>
