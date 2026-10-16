@@ -3,39 +3,43 @@
 Student: [Your full name]  
 Group: [Your group]
 
-Минимальный frontend-проект на HTML, CSS и JavaScript с Bootstrap 5.
+A simple frontend project built with HTML, CSS, JavaScript, and Bootstrap 5.
 
-## Страницы
+## Pages
 
-- `index.html` — Task 0: простая контактная форма.
-- `task1.html` — Task 1: встроенная HTML5 validation (required, email, maxlength).
-- `task2.html` — Task 2: Bootstrap forms, grid, placeholders и helper text.
-- `task3.html` — Task 3: классы is-valid/is-invalid и сообщения под полями.
-- `task4.html` — Task 4: регистрация, проверка паролей, radio, checkbox, select и Reset.
-- `style.css` — общие стили; `script.js` — проверка форм.
+- `index.html` — Task 0: a basic contact form.
+- `task1.html` — Task 1: HTML5 validation using required, email, and maxlength.
+- `task2.html` — Task 2: Bootstrap forms, grid, placeholders, and helper text.
+- `task3.html` — Task 3: is-valid/is-invalid classes and validation feedback.
+- `task4.html` — Task 4: registration with password confirmation, radio buttons, checkboxes, a country dropdown, and a Reset button.
+- `style.css` — shared styles.
+- `script.js` — form validation.
 
-## Запуск
+## Run locally
 
-Распакуйте ZIP и откройте `index.html` в браузере. Установка и сборка не нужны.
-Bootstrap загружается через CDN, поэтому для оформления нужен интернет.
-Формы учебные: данные не отправляются и не сохраняются, аккаунт не создаётся.
+Extract the ZIP and open `index.html` in a browser. No installation or build is required.
+Bootstrap loads from a CDN, so an internet connection is needed for styling.
+The forms are demos: no data is sent or stored, and no account is created.
 
-## Проверка
+## Test the forms
 
-1. Task 1: отправьте пустую форму, затем введите неверный email. Браузер должен остановить отправку. Message ограничен 500 символами.
-2. Task 3: отправьте пустую форму, затем заполните поля правильно. Красные сообщения сменятся зелёными.
-3. Task 4: проверьте пароль короче 8 символов, несовпадающие пароли, пустой Country и отсутствие Gender.
-4. Заполните регистрацию правильно: появится сообщение об успешной проверке. Нажмите Reset: значения и feedback очистятся.
-5. Уменьшите ширину окна: поля в Bootstrap grid должны расположиться в одну колонку.
+1. Task 1: submit an empty form, then enter an invalid email. The browser should block submission. The message is limited to 500 characters.
+2. Task 3: submit an empty form, then fill in the fields correctly. Red feedback should change to green.
+3. Task 4: try a password shorter than 8 characters, mismatched passwords, an empty country, and no gender selection.
+4. Complete the registration correctly to see the success message. Click Reset to clear the values and feedback.
+5. Resize the browser window. Bootstrap grid fields should stack into one column on small screens.
 
-## GitHub Pages
+## Publish with GitHub Pages
 
-1. Создайте публичный репозиторий на GitHub.
-2. Загрузите содержимое папки `assignment4` в корень репозитория, чтобы `index.html` лежал в корне.
-3. Откройте **Settings → Pages**.
-4. В **Build and deployment → Source** выберите **Deploy from a branch**.
-5. Выберите ветку **main**, папку **/(root)** и нажмите **Save**.
-6. Дождитесь публикации. Адрес сайта появится в разделе Pages: `https://USERNAME.github.io/REPOSITORY/`.
-7. Замените имя и группу выше, добавьте ссылку на сайт в README и сдайте ссылку на репозиторий.
+1. Create a public repository on GitHub.
+2. Upload the contents of the `assignment4` folder to the repository root. Make sure `index.html` is in the root.
+3. Open **Settings → Pages**.
+4. Under **Build and deployment → Source**, select **Deploy from a branch**.
+5. Select the **main** branch and **/(root)** folder, then click **Save**.
+6. Wait for deployment. The website link will appear in Pages: `https://USERNAME.github.io/REPOSITORY/`.
+7. Replace the student name and group above, add your website link to this README, and submit the repository link.
 
-Документация: [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), [Bootstrap validation](https://getbootstrap.com/docs/5.3/forms/validation/).
+## References
+
+- [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+- [Bootstrap validation](https://getbootstrap.com/docs/5.3/forms/validation/)
